@@ -17,10 +17,9 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function getHumanChoice() {
-    const playerSelection = prompt("Start the game by picking 'Rock', 'Paper', or 'Scissors'.");
-}
 
-
+const playerSelection = prompt("Start the game by picking 'Rock', 'Paper', or 'Scissors'.");
+console.log(playerSelection);
 const computerSelection = getComputerChoice();
+console.log(computerSelection);
 console.log(playRound(playerSelection, computerSelection));
