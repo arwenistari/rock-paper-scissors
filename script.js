@@ -15,13 +15,13 @@ function playRound(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         return(`It's a tie! You both picked ${playerChoice}!`);
     } else if (playerChoice === "rock" && computerChoice === "scissors") {
-        userScore++;
+        playerScore++;
         return("You Win! Rock beats Scissors");
     } else if (playerChoice === "paper" && computerChoice === "rock") {
-        userScore++;
+        playerScore++;
         return("You Win! Paper beats Rock");
     } else if (playerChoice === "scissors" && computerChoice === "paper") {
-        userScore++;
+        playerScore++;
         return("You Win! Scissors beat Paper");
     } else {
         computerScore++;
@@ -41,5 +41,3 @@ for(var i=0;i<5;i++){
     console.log("Your Score = " + playerScore);
     console.log("Computer's Score = " + computerScore);
 }
-
-
